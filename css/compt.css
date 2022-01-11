@@ -1,0 +1,142 @@
+body {
+    font-family: 'Century Gothic', calibri, serif;
+    margin: 0;
+    padding: 0;
+}
+
+body:before {
+    content: "";
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../image/77.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.contact-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 430px;
+    padding: 80px 40px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.avatar {
+    position: absolute;
+    width: 100px;
+    overflow: hidden;
+    top: calc(20px/2);
+    left: calc(50% - 40px);
+}
+
+.contact-form h2 {
+    margin: 0;
+    padding: 0 0 10px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-form h3 {
+    margin: 0;
+    padding: 0 0 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-for input[type=text],
+.contact-form input[type=email],
+.contact-form input[type=submit] {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.mot input {
+    width: 233.7px;
+    margin-bottom: 20px;
+}
+
+.confirmer input {
+    margin-left: 20px;
+}
+
+.contact-for input[type=text],
+.contact-form input[type=email],
+.contact-form input[type=password],
+.contact-fo input[type=text] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.contact-form input[type=submit] {
+    height: 30px;
+    color: #fff;
+    font-size: 22px;
+    background: red;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin-top: 5%;
+}
+
+.contact-form input[type=submit]:hover {
+    background-color: #390404;
+}
+
+.creer {
+    height: 30px;
+    background: blue;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin-top: 0%;
+}
+
+.creer a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    padding-top: 3px;
+}
+
+.creer a:hover {
+    border-radius: 25px;
+    background-color: #09043a;
+    padding: 3.5px 15px 3.5px 15px;
+}
+
+@media screen and (max-width: 500px) {
+    .contact-form {
+        width: 250px;
+        height: 500px;
+    }
+    .mot input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .confirmer input {
+        margin-left: 0px;
+    }
+}
